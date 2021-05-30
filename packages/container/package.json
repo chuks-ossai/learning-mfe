@@ -2,7 +2,7 @@
   "name": "container",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack serve --config config/webpack.prod.js",
+    "build:prod": "webpack --config config/webpack.prod.js",
     "dev": "webpack serve --config config/webpack.dev.js"
   },
   "dependencies": {
