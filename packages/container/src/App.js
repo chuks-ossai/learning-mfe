@@ -7,7 +7,6 @@ const App = () => {
       <h1>Container works!</h1>
       <hr />
       <MarketingApp />
-      <MarketingApp />
     </div>
   );
 };
