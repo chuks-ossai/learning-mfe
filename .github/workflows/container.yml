@@ -1,5 +1,5 @@
 name: pipeline-deployment
-  uses: actions/github-script@v3
+  uses: actions/github-script
         with:
           # github-token: ${{secrets.GITHUB_TOKEN}}
           ACTIONS_ALLOW_UNSECURE_COMMANDS: true
