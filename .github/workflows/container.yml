@@ -1,8 +1,5 @@
 name: pipeline-deployment
-  uses: actions/github-script
-        with:
-          # github-token: ${{secrets.GITHUB_TOKEN}}
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+  
 on:
   push:
     branches:
@@ -17,6 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      uses: actions/github-script@v3
+        with:
+          # github-token: ${{secrets.GITHUB_TOKEN}}
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
       - run: npm install
       - run: npm run build:prod
       - uses: chrislennon/action-aws-cli@v1.1
